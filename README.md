@@ -11,7 +11,7 @@ An AI-powered Medical Chatbot built using **LLMs, LangChain, Pinecone, Flask, an
 - Vector database using Pinecone
 - LangChain integration
 - Flask backend API
-- OpenAI GPT integration
+- GROQCloud integration
 - AWS CI/CD deployment support
 - Dockerized application
 - Fast and scalable architecture
@@ -23,7 +23,7 @@ An AI-powered Medical Chatbot built using **LLMs, LangChain, Pinecone, Flask, an
 - Python 
 - Flask 
 - LangChain 
-- OpenAI GPT 
+- GROQCloud
 - Pinecone Vector DB 
 - AWS (EC2, ECR, IAM)
 - Docker 
@@ -93,7 +93,7 @@ Create `.env` file:
 
 ```env
 PINECONE_API_KEY=your_pinecone_api_key
-OPENAI_API_KEY=your_openai_api_key
+GROQ_API_KEY=your_groq_api_key
 ```
 
 ---
@@ -126,7 +126,7 @@ http://localhost:8080
 2. Query converted into embeddings  
 3. Pinecone retrieves relevant context  
 4. LangChain combines context + LLM  
-5. OpenAI generates response  
+5. GROQCloud generates response  
 6. Flask returns answer to UI  
 
 ---
@@ -174,7 +174,7 @@ AWS_SECRET_ACCESS_KEY
 AWS_DEFAULT_REGION
 ECR_REPO
 PINECONE_API_KEY
-OPENAI_API_KEY
+GROQ_API_KEY
 ```
 
 ---
